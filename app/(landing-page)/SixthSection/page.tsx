@@ -6,18 +6,18 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/images/logo/logo-15.svg", alt: "Logo 15" },
-  { src: "/images/logo/logo-13.svg", alt: "Logo 13" },
-  { src: "/images/logo/logo-16.svg", alt: "Logo 16" },
-  { src: "/images/logo/logo-17.svg", alt: "Logo 17" },
-  { src: "/images/logo/logo-18.svg", alt: "Logo 18" },
-  { src: "/images/logo/logo-19.svg", alt: "Logo 19" },
-  { src: "/images/logo/logo-14.svg", alt: "Logo 14" },
-  { src: "/images/logo/logo-13.svg", alt: "Logo 13" },
-  { src: "/images/logo/logo-15.svg", alt: "Logo 15" },
-  { src: "/images/logo/logo-13.svg", alt: "Logo 13" },
-  { src: "/images/logo/logo-12.svg", alt: "Logo 12" },
-  { src: "/images/logo/logo-14.svg", alt: "Logo 14" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 15" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 13" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 16" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 17" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 18" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 19" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 14" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 13" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 15" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 13" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 12" },
+  { src: "/images/logo/Estacio.png", alt: "Logo 14" },
 ];
 
 const SixthSection = () => {
