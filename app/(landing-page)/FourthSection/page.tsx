@@ -53,7 +53,7 @@ const FourthSection = () => {
       >
         <div className="flex-shrink-0">
           <Image
-            src="/images/tab-1.webp"
+            src="/images/tab-4.webp"
             alt="Atendimento Sindicato"
             width={700}
             height={700}
@@ -87,7 +87,7 @@ const FourthSection = () => {
       >
         <div className="flex-shrink-0">
           <Image
-            src="/images/tab-2.webp"
+            src="/images/tab-4.webp"
             alt="Carteirinha do Sindicato"
             width={700}
             height={700}
