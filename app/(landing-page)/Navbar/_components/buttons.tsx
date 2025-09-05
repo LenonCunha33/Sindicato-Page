@@ -24,22 +24,22 @@ const ActionButtons = () => {
               <SheetDescription>
                 <div className="flex flex-col space-y-4 items-start w-full  text-lg text-black mt-10">
                   <Link href="/" className="">
-                    Sign In
+                    Início
                   </Link>
-                  <Link href="/" className="">
-                    Get Started
+                  <Link href="/associados-sind.trabalhadores.industria.civil" className="">
+                    História
                   </Link>
-                  <Link href="/pricing" className=" ">
-                    Pricing
+                  <Link href="/associados-sind.trabalhadores.industria.civil" className=" ">
+                    Diretoria
                   </Link>
-                  <Link href="/" className="">
-                    Features
+                  <Link href="/associados-sind.trabalhadores.industria.civil" className="">
+                    Associados
                   </Link>
-                  <Link href="/contact" className="">
-                    Contact
+                  <Link href="/associados-sind.trabalhadores.industria.civil" className="">
+                    Convênios
                   </Link>
-                  <Link href="/" className="">
-                    About
+                  <Link href="/associados-sind.trabalhadores.industria.civil" className="">
+                    Contatos
                   </Link>
                 </div>
               </SheetDescription>
@@ -61,16 +61,12 @@ const ActionButtons = () => {
           </div>
         </div>
 
-        <Link href="/contact" className="">
-          Contact Sales
+        
+        <Link href="/banco-de-memoria-sind.trabalhadores.industria.civil">
+          <Button className="bg-[#000] text-md rounded-sm">
+            Banco de Memória
+          </Button>
         </Link>
-
-        <Button className="text-md" variant={"ghost"}>
-          Sign In
-        </Button>
-        <Button className="bg-[#000] text-md rounded-sm ">
-          Get Started
-        </Button>
 
         <div></div>
       </div>

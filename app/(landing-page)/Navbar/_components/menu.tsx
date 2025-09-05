@@ -17,39 +17,39 @@ import Logo from "./logo";
 
 const components: { title: string; description: string }[] = [
   {
-    title: "Frozen",
+    title: "Dra. Adriane Leal Muniz",
 
     description:
-      "Recommended template for most use cases. Includes all the components you need to get started.",
+      "Mais de 30 Atendimento Odontológicos , Limpeza , Canal , Extração de siso...",
   },
   {
-    title: "Swift",
+    title: "Medicina do Trabalho",
 
     description:
-      "A template with a minimal set of components. Use this template if you want to build your own components.",
+      "Consultas Médicas , Autorizações em: - Sede do Sindicato e SubSede do...",
   },
   {
-    title: "Tuscany",
+    title: "Escola Sesi",
 
     description:
-      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+      "Acesso a Bolsas na Escola Sesi , Pacotes de Academia , Serviços Odontológicos...",
   },
   {
-    title: "Amber",
+    title: "VRMED - Clínica Médica",
 
-    description: "Great for building a marketing or landing page.",
+    description: "Cliníca Médica e Odontológica , Consultas Médicas Cardiologista, Nutricionista...",
   },
   {
-    title: "Tide",
-
-    description:
-      "Layered template with a sidebar navigation. Great for building a dashboard or admin panel.",
-  },
-  {
-    title: "Mint",
+    title: "Dra. Claudia Gioseffi",
 
     description:
-      "Nice template for building a blog or a content-heavy website.",
+      "Atendimento Odontológico Gratuito Para Associados e Dependentes...",
+  },
+  {
+    title: "Fasf - Faculdade Sul Fluminense",
+
+    description:
+      "Faculdade Sul Fluminense , Confira Cursos ue podem Chegar Aé 50% de...",
   },
 ];
 
@@ -58,7 +58,7 @@ export function NavigationMenuBar() {
     <NavigationMenu>
       <NavigationMenuList className="hidden md:flex md:space-x-4">
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Features</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Sindicato</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -70,28 +70,28 @@ export function NavigationMenuBar() {
                     <Logo />
 
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Bird Software
+                      Sindicato dos Trabalhadores
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      eCommerce for everyone.
+                      Há 79 Anos Construindo o Progresso da Nossa Região!
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/product" title="Product">
-                Learn about the project goals and how to get started.
+              <ListItem href="/diretoria-sind.industria.civil" title="Diretoria">
+                Veja Mais Sobre Toda Nossa Diretoria. Executiva a Suplentes
               </ListItem>
-              <ListItem href="/" title="Demo">
-                How to build a store in 60 seconds with Bird.
+              <ListItem href="/historia-sind.trabalhadores.industria.civil" title="História">
+                Em 24 de março de 1946 foi fundado o "Sindicato dos Trabalhadores na...
               </ListItem>
-              <ListItem href="/" title="Community">
-                Join the community and get help with your project.
+              <ListItem href="/associados-sind.trabalhadores.industria.civil" title="Associados">
+                Veja os documentos necessários para retirar a carteirinha e ter...
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Convênios</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -102,32 +102,17 @@ export function NavigationMenuBar() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem key={component.title} title={component.title}>
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+
+        <NavigationMenuItem
+
+        
+        >
+          <Link href="/contato-sind.trabalhadores.industria.civil" legacyBehavior passHref>
+          <div>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Enterprise
+              Contato
             </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/pricing" legacyBehavior passHref>
-            <div>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Pricing
-              </NavigationMenuLink>
-            </div>
+          </div>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>

@@ -11,8 +11,8 @@ const Logo = () => {
 
         >
     <Image
-        src="/images/bird-logo.png"
-        alt="Bird Logo"
+        src="/images/logo/SINTRA.png"
+        alt="Logo Sinicato dos Trabalhadores"
         width={80}
         height={80}
         className="mr-6"

@@ -8,90 +8,89 @@ import { motion } from "framer-motion";
 const FirstSection = () => {
   return (
     <section
-      className="md:py-20 py-10  space-y-10
-    bg-[#E5E4E2] 
-    
-    
-    "
+      className="bg-white py-10 md:py-20 space-y-10"
+      aria-labelledby="intro-section"
     >
-      <div className="container mx-auto text-center md:w-1/2">
-        <div
-          className="text-6xl flex justify-center md:text-6xl   md:px-20 pb-10
-         
-
-        
-        
-        "
+      <div className="container mx-auto text-center max-w-4xl">
+        {/* Título Principal */}
+        <h1
+          id="intro-section"
+          className="text-4xl md:text-6xl font-bold leading-tight text-gray-900 mb-6"
         >
-          The best platform for cross-functional work
-        </div>
+          Há 79 Anos Construindo o Progresso da Nossa Região!
+        </h1>
 
-        <p
-          className="text-lg md:text-xl mb-10 
-     
-        
-        
-        "
-        >
-          Want more efficiency in your organization? Bird is easy for all teams
-          to use, so you can deliver quality work, faster.
+        {/* Texto informativo */}
+        <p className="text-base md:text-lg text-gray-700 mb-10">
+          Sindicato dos Trabalhadores nas Indústrias da Construção Civil,
+          Imobiliário, Montagens Industriais, Construção Pesada, Mármores,
+          entre outros.
         </p>
-        <div className="flex gap-4 justify-center">
-          <button className="bg-[#000] text-white px-6 py-3 rounded-sm ">
-            Get Started
+
+        {/* Botões */}
+        <div className="flex gap-4 justify-center flex-wrap">
+          <button
+            className="bg-black text-white px-6 py-3 rounded-sm transition-all duration-300 cursor-pointer hover:bg-red-400"
+            aria-label="Emitir Boleto Sindical"
+          >
+            Boleto Sindical
           </button>
+
           <Link href="/Contact">
-            <button className="bg-gray-500 text-white px-6 py-3 rounded-sm">
-              See how it works
+            <button
+              className="bg-gray-600 text-white px-6 py-3 rounded-sm transition-all duration-300 cursor-pointer hover:bg-red-400"
+              aria-label="Acesse os Informativos do Sindicato"
+            >
+              Acesse Informativos
             </button>
           </Link>
         </div>
       </div>
 
-      <div className=" md:pt-10 items-center space-y-10   md:flex  justify-center md:mx-auto md:space-x-10">
-        <motion.div 
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-
-
-        
-        className="px-10 md:px-0">
-      <Image
-        src="/images/tab-1.webp"
-        alt="Picture of the author"
-        width={500}
-        height={500}
-      />
-
-        </motion.div>
-
-        <motion.div 
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        
-  
-        className="px-10 md:px-0">
+      {/* Galeria de imagens com animações */}
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:pt-10">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="px-6 md:px-0"
+        >
           <Image
-            src="/images/tab-2.webp"
-            alt="Picture of the author"
+            src="/images/tab-1.png"
+            alt="Registro histórico do Sindicato - Primeiras Décadas"
             width={500}
             height={500}
+            className="rounded-md shadow-sm"
           />
-
         </motion.div>
 
-        <motion.div 
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-
-        
-        
-        className="px-10 md:px-0  ">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="px-6 md:px-0"
+        >
           <Image
-            src="/images/tab-3.webp"
-            alt="Picture of the author"
+            src="/images/tab-2.png"
+            alt="Assembleia de trabalhadores realizada pelo Sindicato"
             width={500}
             height={500}
+            className="rounded-md shadow-sm"
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="px-6 md:px-0"
+        >
+          <Image
+            src="/images/tab-3.png"
+            alt="Depoimento sobre as lutas sindicais"
+            width={500}
+            height={500}
+            className="rounded-md shadow-sm"
           />
         </motion.div>
       </div>

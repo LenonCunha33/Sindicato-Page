@@ -1,74 +1,70 @@
-'use client'
-
-
+"use client";
 
 import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-
 const ThirdSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-
-
-  
   return (
-    <div 
-    >
-      <motion.div 
-      ref = {ref}
-      initial={{ y: 100, opacity: 0 }}  
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 4 }}
+    <section className="w-full bg-[#097969]">
+      <motion.div
+        ref={ref}
+        initial={{ y: 100, opacity: 0 }}
+        animate={isInView ? { y: 0, opacity: 1 } : {}}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="flex flex-col space-y-10"
+      >
+        {/* Título */}
+        <div className="py-16 md:py-20 flex flex-col items-center space-y-10 text-center">
+          <h2 className="text-white text-3xl md:text-6xl font-semibold leading-snug px-6">
+            Nossos Horários de Atendimento
+          </h2>
 
-      
-      className="flex flex-col space-y-10 ">
-        <div className="py-20 bg-[#097969] items-center flex flex-col space-y-10">
-          <div className="text-white text-4xl px-10 md:px-0  md:text-6xl md:pb-10 flex items-start justify-start ">
-            Why companies choose Bird
-          </div>
-          <div className="md:w-3/4 px-10">
-            <div className="flex space-x-10 md:space-x-20 text-white items-center text-2xl justify-center border-b border-t py-10">
-              <CheckCircle2 className="md:h-20 md:w-20 h-10 w-10 " />
-              <div className="md:w-80 md:text-3xl text-md w-72">
-                The only platform with goals built in
+          {/* Lista de horários */}
+          <div className="md:w-3/4 w-full px-6 md:px-0 space-y-6">
+            {/* Item 1 */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between border-y border-white/30 py-6 md:py-10 gap-6">
+              <div className="flex items-center gap-4">
+                <CheckCircle2 className="text-red-400 md:h-16 md:w-16 h-10 w-10 flex-shrink-0" />
+                <p className="text-white md:text-2xl text-lg font-medium">
+                  Sede Sindical de Volta Redonda
+                </p>
               </div>
-              <div className="md:w-1/2 hidden md:block">
-                See related tasks, collaborators and progress to quickly achieve
-                business goals.
-              </div>
-            </div>
-            <div className="flex space-x-10 md:space-x-20 text-white items-center justify-center  text-2xl border-b border-t py-10">
-              <CheckCircle2 className="md:h-20 md:w-20 w-10 h-10 " />
-              <div className="md:w-80 md:text-3xl text-md w-72">
-                Rated best for cross-team collaboration
-              </div>
-              <div className="md:w-1/2 hidden md:block">
-                Bird is rated as a leader in work management by industry
-                experts.
-              </div>
-            </div>
-            <div className="flex space-x-10 md:space-x-20 text-white items-center justify-center text-2xl border-b border-t py-10">
-              <CheckCircle2 className="md:h-20 md:w-20 h-10 w-10 " />
-              <div className="md:w-80 md:text-3xl text-md w-72">
-                Simple adoption, with less downtime
-              </div>
-              <div className="md:w-1/2 hidden md:block">
-                Get tailored support to help your teams easily migrate existing
-                data and adopt Bird.
-              </div>
+              <p className="text-white md:text-xl text-base md:w-1/2 text-center md:text-left">
+                De segunda a sexta-feira de 13 horas às 18 horas
+              </p>
             </div>
 
-            <div className="bg-gray-200 p-6 w-52 rounded-lg mt-10 items-center justify-center flex">
-              See how it works
+            {/* Item 2 */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between border-y border-white/30 py-6 md:py-10 gap-6">
+              <div className="flex items-center gap-4">
+                <CheckCircle2 className="text-red-400 md:h-16 md:w-16 h-10 w-10 flex-shrink-0" />
+                <p className="text-white md:text-2xl text-lg font-medium">
+                  Sede Sindical de Resende
+                </p>
+              </div>
+              <p className="text-white md:text-xl text-base md:w-1/2 text-center md:text-left">
+                Somente às quintas-feiras de 14 horas às 18 horas
+              </p>
             </div>
           </div>
+
+          {/* Botão Saiba Mais */}
+          <motion.a
+            href="#"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-[#000] text-white px-8 py-3 rounded-md cursor-pointer transition-colors duration-300 hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-red-400"
+          >
+            Saiba Mais
+          </motion.a>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

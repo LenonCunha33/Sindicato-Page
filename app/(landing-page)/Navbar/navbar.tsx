@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import Logo from "./_components/logo";
 import { NavigationMenuBar } from "./_components/menu";
 import ActionButtons from "./_components/buttons";
@@ -11,35 +10,34 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setHasScrolled(true);
-      } else {
-        setHasScrolled(false);
-      }
+      setHasScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navbarClasses = `
-    flex items-center justify-center space-x-10 bg-[#E5E4E2] md:px-10
-    sticky top-0 z-50 ${hasScrolled ? "shadow-sm" : ""}
+    sticky top-0 z-50 w-full
+    transition-all duration-300 ease-in-out
+    ${hasScrolled ? "bg-white/90 backdrop-blur-md shadow-md" : "bg-[#fffafa]"}
   `;
 
   return (
-    <div className={navbarClasses}>
-      <div className="flex w-2/3 md:w-1/2">
+    <nav className={navbarClasses} aria-label="Menu principal">
+      <div className="flex items-center justify-between max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-3">
+        {/* Logo + Menu */}
+        <div className="flex items-center space-x-8">
+          <Logo />
+          <NavigationMenuBar />
+        </div>
 
-
-      <Logo />
-      <NavigationMenuBar />
+        {/* Botões de Ação */}
+        <div className="flex items-center space-x-4">
+          <ActionButtons />
+        </div>
       </div>
-      <ActionButtons />
-    </div>
+    </nav>
   );
 };
 
