@@ -13,7 +13,7 @@ const tabs = [
     feature1: "Formulário se encontra disponível em PDF. Saiba Mais",
     feature2: "Preencher o formulário e enviá-lo para o e-mail. Saiba Mais",
     feature3: "Para iniciar o procedimento descrito. Saiba Mais",
-    image: "/images/tab-1.webp",
+    image: "/images/tab-4.webp",
   },
   {
     name: "Homologações",
@@ -21,7 +21,7 @@ const tabs = [
     feature1: "Documentos necessários para efetuar homologações TRCT. Saiba Mais",
     feature2: "Carta de Preposto ou Procuração. Saiba Mais",
     feature3: "Aviso Prévio ou pedido discriminando. Saiba Mais",
-    image: "/images/tab-2.webp",
+    image: "/images/tab-4.webp",
   },
   {
     name: "Profissionais",
@@ -29,7 +29,7 @@ const tabs = [
     feature1: "Acesso em tempo real a profissionais. Saiba Mais",
     feature2: "Administrativos, Ajudantes, Apontadores. Saiba Mais",
     feature3: "Acesse a tabela contendo todo o conteúdo de informações. Saiba Mais",
-    image: "/images/tab-3.webp",
+    image: "/images/tab-4.webp",
   },
   {
     name: "Dúvidas",
