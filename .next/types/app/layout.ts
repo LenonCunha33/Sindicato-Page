@@ -1,4 +1,4 @@
-// File: C:\Users\lenon\Desktop\Synth\project\asana-clone\app\layout.tsx
+// File: C:\Users\lenon\Desktop\Sindicato\Sintraconsmonpes\frontend\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
